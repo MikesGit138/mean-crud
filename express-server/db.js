@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+const url = 'mongodb://localhost:27017/MyStudentCrud'
 
-mongoose.connect('mongodb://localhost:27017/MyStudentCrud', (err) =>{
+mongoose.connect(url, (err) =>{
     if(!err){
         console.log('mongodb connected');
     }else{
